@@ -1,0 +1,64 @@
+/* 
+   Dark Gold Template Style 
+   Premium dark theme with vibrant gold accents.
+*/
+
+:root {
+    --primary: #020205;
+    /* Black Pearl */
+    --secondary: #08080f;
+    /* Midnight */
+    --accent: #0f0f1a;
+    --gold: #e6b800;
+    /* Richer Gold */
+    --gold-light: #ffe066;
+    --gold-dark: #b8860b;
+    --text: #f0f0f5;
+    --text-muted: #8a8a9e;
+    --border: rgba(230, 184, 0, 0.2);
+    --card-bg: rgba(12, 12, 22, 0.9);
+    --input-bg: #05050a;
+    --gradient-gold: linear-gradient(135deg, #e6b800 0%, #ffe066 50%, #b8860b 100%);
+    --shadow-gold: 0 0 30px rgba(230, 184, 0, 0.25);
+}
+
+/* عمق أكبر للخلفية في القالب المظلم */
+body {
+    background: var(--primary);
+}
+
+body::before {
+    background:
+        radial-gradient(circle at 10% 20%, rgba(230, 184, 0, 0.06) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(230, 184, 0, 0.03) 0%, transparent 40%);
+}
+
+.site-header {
+    background: rgba(2, 2, 5, 0.98);
+    border-bottom: 2px solid var(--border);
+}
+
+.card {
+    background: var(--card-bg) !important;
+    border: 1px solid var(--border) !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.audio-card:hover {
+    box-shadow: var(--shadow-gold), 0 15px 45px rgba(0, 0, 0, 1);
+}
+
+.logo-icon {
+    box-shadow: 0 0 25px rgba(230, 184, 0, 0.5);
+}
+
+.btn-gold {
+    box-shadow: 0 5px 15px rgba(230, 184, 0, 0.2);
+}
+
+/* تخصيص المشغل في هذا القالب */
+.audio-player-container {
+    background: rgba(5, 5, 10, 0.98) !important;
+    border-top: 2px solid var(--gold);
+}

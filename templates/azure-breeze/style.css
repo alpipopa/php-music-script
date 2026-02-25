@@ -1,0 +1,248 @@
+/* =====================================================
+   Musican - Azure Breeze (Morning Light Theme)
+   Modern, Clean, and Professional Daylight Design
+   ===================================================== */
+
+:root {
+    --primary: #f8fafc;
+    /* خلفية فاتحة هادئة */
+    --secondary: #ffffff;
+    /* لون الحاويات */
+    --accent: #3b82f6;
+    /* أزرق حيوي */
+    --gold: #0f172a;
+    /* سنحول الذهب هنا إلى لون غامق جداً للنصوص الرئيسية */
+    --gold-light: #1d4ed8;
+    --gold-dark: #1e3a8a;
+    --text: #1e293b;
+    /* نص احترافي غامق */
+    --text-muted: #64748b;
+    /* نص رمادي متوسط */
+    --text-dark: #0f172a;
+    --border: rgba(0, 0, 0, 0.08);
+    --card-bg: rgba(255, 255, 255, 0.9);
+    --card-hover: rgba(255, 255, 255, 1);
+    --input-bg: #f1f5f9;
+    --gradient-1: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    --gradient-gold: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    --shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+    --shadow-gold: 0 4px 14px 0 rgba(59, 130, 246, 0.3);
+}
+
+body {
+    background: var(--primary);
+    color: var(--text);
+    background-image:
+        radial-gradient(circle at 0% 0%, rgba(59, 130, 246, 0.03) 0%, transparent 40%),
+        radial-gradient(circle at 100% 100%, rgba(59, 130, 246, 0.03) 0%, transparent 40%);
+}
+
+/* الهيدر */
+.site-header {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.logo-text {
+    background: var(--accent) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+/* القائمة المنسدلة للمستخدم */
+.user-dropdown {
+    background: #ffffff !important;
+    border: 1px solid #edf2f7 !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+}
+
+.user-dropdown a {
+    color: #4a5568 !important;
+}
+
+.user-dropdown a:hover {
+    background: #f7fafc !important;
+    color: var(--accent) !important;
+}
+
+.btn-icon {
+    color: #4a5568 !important;
+    background: #f1f5f9 !important;
+}
+
+.btn-icon:hover {
+    color: var(--accent) !important;
+    background: #e2e8f0 !important;
+}
+
+/* القائمة */
+.nav-links a {
+    color: #475569 !important;
+    font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--accent) !important;
+    background: rgba(59, 130, 246, 0.1) !important;
+}
+
+/* البطاقات */
+.card,
+.audio-card,
+.performer-card {
+    background: #ffffff !important;
+    border: 1px solid #edf2f7 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03) !important;
+}
+
+.card:hover,
+.audio-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02) !important;
+    border-color: var(--accent) !important;
+}
+
+/* العناوين داخل البطاقات */
+.title,
+.audio-title,
+.performer-name {
+    color: var(--text-dark) !important;
+}
+
+/* الأزرار */
+.btn-gold {
+    background: var(--accent) !important;
+    color: #ffffff !important;
+    box-shadow: var(--shadow-gold) !important;
+}
+
+.btn-gold:hover {
+    background: #2563eb !important;
+    transform: translateY(-1px);
+}
+
+/* المشغل العائم */
+.musican-player {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(24px);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.04) !important;
+}
+
+.player-title {
+    color: var(--text-dark) !important;
+    font-weight: 700;
+}
+
+.progress-bar {
+    background: #f1f5f9 !important;
+}
+
+.progress-fill {
+    background: var(--accent) !important;
+}
+
+/* قائمة التشغيل العائمة */
+.playlist-panel {
+    background: rgba(255, 255, 255, 0.98) !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+.playlist-header {
+    background: #ffffff !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+    color: var(--accent) !important;
+}
+
+.playlist-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03) !important;
+}
+
+.playlist-item:hover {
+    background: #f7fafc !important;
+}
+
+.playlist-item.active {
+    background: rgba(59, 130, 246, 0.1) !important;
+    border-right-color: var(--accent) !important;
+}
+
+.playlist-item .title {
+    color: var(--text-dark) !important;
+}
+
+/* الفوتر */
+.site-footer {
+    background: #ffffff !important;
+    border-top: 1px solid #f1f5f9;
+    color: #4a5568 !important;
+}
+
+.footer-title {
+    color: var(--text-dark) !important;
+}
+
+.footer-desc {
+    color: #64748b !important;
+}
+
+.footer-link,
+.footer-links a {
+    color: #64748b !important;
+}
+
+.footer-link:hover,
+.footer-links a:hover {
+    color: var(--accent) !important;
+}
+
+.social-link {
+    background: #f1f5f9 !important;
+    border-color: #e2e8f0 !important;
+    color: #64748b !important;
+}
+
+.social-link:hover {
+    background: var(--accent) !important;
+    color: #ffffff !important;
+}
+
+/* البحث */
+.header-search input {
+    background: #f1f5f9 !important;
+    border: 1px solid transparent !important;
+    color: var(--text) !important;
+}
+
+.header-search input:focus {
+    background: #ffffff !important;
+    border-color: var(--accent) !important;
+}
+
+.search-results {
+    background: #ffffff !important;
+    border: 1px solid #edf2f7 !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+}
+
+.result-name {
+    color: var(--text-dark) !important;
+}
+
+.result-type {
+    color: var(--accent) !important;
+}
+
+.search-result-item:hover {
+    background: #f7fafc !important;
+}
+
+/* شارات الأقسام */
+.cat-badge {
+    background: #eff6ff !important;
+    color: #3b82f6 !important;
+}
